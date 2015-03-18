@@ -155,7 +155,9 @@ class FBackDemo:
 	    if(left>right):
 	        print "left"
             	print "Roll channel"
-            	v.channel_override = { "1" : 1400}
+            	v.channel_override = { "1" : 1450}
+		time.sleep(0.05)
+		v.channel_override = { "1" : 1400}
             	v.flush()
             	time.sleep(2)
             	print "Roll neutral"
@@ -165,7 +167,9 @@ class FBackDemo:
 	    else:
             	print "right"
             	print "Roll channel"
-            	v.channel_override = { "1" : 1600}
+            	v.channel_override = { "1" : 1550}
+		time.sleep(0.05)
+		v.channel_override = { "1" : 1600}
             	v.flush()
             	time.sleep(2)
             	print "Roll neutral"
